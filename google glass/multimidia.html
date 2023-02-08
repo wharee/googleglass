@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="css e imagens/_css/estilo.css"> 
+    <link rel="stylesheet" type="text/css" href="css e imagens/_css/media.css">
+
+</head>
+<script>
+    function changephoto (photo) {
+    document.getElementById("icone").src=photo;
+}
+</script>
+<body>
+<div id="interface"> 
+    <header id="cabecalho">
+    <hgroup>   
+
+    <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando</h2> 
+
+</hgroup>       <!-- grupo de textos-->
+
+<img id="icone" src="projeto-glass-html5/_imagens/multimidia.png">
+<!-- local da img -->
+
+    <nav id="menu">      <!-- navegador -->
+        <h1>Menu Principal</h1>
+        <ul>         <!-- lista desordenada -->
+        <li onmouseover="changephoto('css e imagens/_imagens/home.png')" onmouseout="changephoto('projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>   <!--list item-->
+        <li onmouseover="changephoto('css e imagens/_imagens/especificacoes.png')" onmouseout="changephoto('projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="changephoto('css e imagens/_imagens/fotos.png')" onmouseout="changephoto('projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="changephoto('css e imagens/_imagens/multimidia.png')" onmouseout="changephoto('projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multmidia</a></li>
+        <li onmouseover="changephoto('css e imagens/_imagens/contato.png')" onmouseout="changephoto('projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+    </ul>  
+    </nav>
+</header>   <!-- parte de cima -->
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+            <h3>Glass > Multimídia</h3>      
+            <h1>Sons e Vídeos</h1>
+            <h2>por Gustavo Guanabara</h2> 
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+
+
+    <div id="tv-radio">
+        <audio id="musica" controls="controls">
+            <source src="../phyton programacao/curso-html5-pacote02/_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+            <source src="../phyton programacao/curso-html5-pacote02/_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac"/>
+            <source src="../phyton programacao/curso-html5-pacote02/_media/2009-lovers-carvings-bibio (online-audio-converter.com).ogg" type="audio/ogg"/>
+            Desculpe, não foi possível carregar o áudio.
+
+        </audio>
+        <video id="filme" controls="controls" poster="../phyton programacao/projeto-glass-html5/_imagens/video-mini03.jpg"> 
+            <source src="../phyton programacao/curso-html5-pacote02/_media/getting-started.mp4" type="video/mp4"/>
+            <source src="../phyton programacao/curso-html5-pacote02/_media/getting-started.webm" type="video/webm"/>
+            <source src="../phyton programacao/curso-html5-pacote02/_media/getting-started.ogv" type="video/ogg"/>
+            Desculpe, não foi possível carregar o VÍDEO.
+        </video>
+    </div>
+
+</article>
+    </section>
+
+
+    <footer id="rodape">
+    <p>Copyright &copy; 2013 - by Vitor de Castro <br>   <!-- &copy é o simbolo de copyright-->
+    <a href="https://www.instagram.com/viitorcoelho/" target="_blank">Instragram</a> | <a href="https://twitter.com/viitorcoelho" target="_blank">Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>
